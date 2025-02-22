@@ -25,7 +25,7 @@ const Footer = () => {
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Whether it&apos;s a brand-new idea or enhancing your current platform,
-          I'm here to bring it to life.
+          I&apos;m here to bring it to life.
         </p>
 
         <a href="mailto:kishore15421@gmail.com">
