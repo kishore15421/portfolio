@@ -168,9 +168,11 @@ const config = {
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
-          'bg-grid': (value: any) => ({
+          'bg-grid': (value) => ({
             backgroundImage: `url("${svgToDataUri(
-              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100" fill="none" stroke="${value}">
+                <path d="M0 0 L32 32 M32 0 L0 32"/>
+              </svg>`
             )}")`,
           }),
           'bg-grid-small': (value: any) => ({
@@ -181,6 +183,29 @@ const config = {
           'bg-dot': (value: any) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
+            )}")`,
+          }),
+          'bg-dashed': (value) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100" fill="none" stroke="${value}" stroke-dasharray="5 5">
+      <path d="M0 16 L32 16 M16 0 L16 32"/>
+    </svg>`
+            )}")`,
+          }),
+          'bg-ripples': (value) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100" fill="none">
+      <circle cx="16" cy="16" r="4" stroke="${value}"/>
+      <circle cx="16" cy="16" r="8" stroke="${value}"/>
+      <circle cx="16" cy="16" r="12" stroke="${value}"/>
+    </svg>`
+            )}")`,
+          }),
+          'bg-diamond': (value) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100" fill="none" stroke="${value}">
+              <path d="M16 0 L32 16 L16 32 L0 16 Z"/>
+            </svg>`
             )}")`,
           }),
         },

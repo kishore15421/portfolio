@@ -50,7 +50,7 @@ const Hero = () => {
               className="rounded-full shadow-lg border-4 border-sky-500"
             />
           </div>
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl font-mono">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl font-mono dark:bg-dashed-white/[0.03] bg-dashed-black-100/[0.2]">
             Hi! I&apos;m{' '}
             <span className="text-sky-500 font-bold">CR Kishore</span>, a MERN
             Stack Developer based in Chittoor. I specialize in designing and
