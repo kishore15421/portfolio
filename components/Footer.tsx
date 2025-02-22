@@ -1,6 +1,7 @@
 import { FaLocationArrow, FaWhatsapp } from 'react-icons/fa6';
 import { socialMedia } from '@/data';
 import MagicButton from './MagicButton';
+import Image from 'next/image';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,21 +9,23 @@ const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
+        <Image
           src="/footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-50 "
+          width={100}
+          height={100}
         />
       </div>
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Let's build <span className="text-purple">something amazing</span>{' '}
-          together!
+          Let&apos;s build{' '}
+          <span className="text-purple">something amazing</span> together!
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Whether it's a brand-new idea or enhancing your current platform, I'm
-          here to bring it to life.
+          Whether it&apos;s a brand-new idea or enhancing your current platform,
+          I'm here to bring it to life.
         </p>
 
         <a href="mailto:kishore15421@gmail.com">
@@ -46,7 +49,7 @@ const Footer = () => {
               href={info.link}
               target="_blank"
             >
-              <img src={info.img} alt="icons" width={20} height={20} />
+              <Image src={info.img} alt="icons" width={20} height={20} />
             </a>
           ))}
           <a

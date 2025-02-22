@@ -51,16 +51,17 @@ const Hero = () => {
             />
           </div>
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl font-mono">
-            Hi! I'm <span className="text-sky-500 font-bold">CR Kishore</span>,
-            a MERN Stack Developer based in Chittoor. I specialize in designing
-            and developing high-performance, intuitive, and scalable web
+            Hi! I&apos;m{' '}
+            <span className="text-sky-500 font-bold">CR Kishore</span>, a MERN
+            Stack Developer based in Chittoor. I specialize in designing and
+            developing high-performance, intuitive, and scalable web
             applications using <span className="text-sky-400">React</span>,
             Next.js, <span className="text-green-500">Node.js</span>, and
             MongoDB. With a keen eye for efficiency, performance, and user
             experience, I craft seamless digital solutions that make an impact.
             I leverage AI tools like GitHub Copilot and OpenAI APIs to optimize
             development efficiency, automate testing, and enhance user
-            experiences. Let's create something groundbreaking together!
+            experiences. Let&apos;s create something groundbreaking together!
           </p>
 
           <a href="#projects">
