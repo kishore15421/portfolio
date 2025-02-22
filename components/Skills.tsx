@@ -83,7 +83,7 @@ const Feature = ({
 }: {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: string;
   index: number;
 }) => {
   return (
